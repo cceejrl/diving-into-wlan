@@ -1,0 +1,29 @@
+# Obsidian — per-machine state (keep shared config tracked)
+.obsidian/workspace*.json
+.obsidian/.hotreload
+.obsidian/plugins/git/    # obsidian-git auto-backup cache
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Hugo build output
+hugo/public/
+hugo/resources/
+
+# Dependencies (if any)
+node_modules/
+
+# Sensitive files
+*.pem
+*.key
+
+# Translation cache
+scripts/.translate_cache/
+
+# IDE
+.vscode/
+.idea/

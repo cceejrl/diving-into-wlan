@@ -1,0 +1,71 @@
+baseURL: https://cceejrl.github.io/diving-into-wlan/
+title: "Diving into WLAN: An Algo Perspective"
+theme: hugo-book
+
+# Book configuration
+disablePathToLower: true
+enableGitInfo: false
+enableRobotsTXT: true
+
+# Enable KaTeX for math rendering
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: [["$$", "$$"], ["\\[", "\\]"]]
+          inline: [["$", "$"], ["\\(", "\\)"]]
+  highlight:
+    style: monokai
+    noClasses: false
+
+params:
+  BookTheme: "auto"
+  BookSection: posts
+  BookSearch: true
+  BookComments: false
+  BookTranslatedOnly: false
+  BookDateFormat: "2006-01-02"
+  BookRepo: "https://github.com/cceejrl/diving-into-wlan"
+  BookEditLink: "{{ .Site.Params.BookRepo }}/edit/main/obsidian-vault/{{ .File.Path }}"
+
+# Multilingual configuration
+defaultContentLanguage: zh
+
+languages:
+  zh:
+    label: 中文
+    contentDir: content.zh
+    weight: 1
+    title: "Diving into WLAN · 无线通信算法视角"
+    menu:
+      main:
+        - name: 文章
+          pageRef: /posts
+          weight: 1
+        - name: 代码
+          url: /code
+          weight: 2
+        - name: GitHub
+          url: https://github.com/cceejrl/diving-into-wlan
+          weight: 3
+
+  en:
+    label: English
+    contentDir: content.en
+    weight: 2
+    title: "Diving into WLAN: An Algo Perspective"
+    menu:
+      main:
+        - name: Posts
+          pageRef: /posts
+          weight: 1
+        - name: Code
+          url: /code
+          weight: 2
+        - name: GitHub
+          url: https://github.com/cceejrl/diving-into-wlan
+          weight: 3

@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version *)",
+      "Bash(git --version)",
+      "Bash(winget install *)",
+      "Bash(choco install *)",
+      "Bash(git init *)",
+      "Bash(git submodule *)",
+      "Bash(git clone *)",
+      "Bash(rm -rf hugo/themes/hugo-book/.git)",
+      "Bash(cd D:\\\\JRL\\\\JRLPlayGround *)",
+      "Bash(mkdir -p D:/JRL/JRLPlayGround/hugo/content/zh/posts)",
+      "Bash(mkdir -p D:/JRL/JRLPlayGround/hugo/content/en/posts)",
+      "Bash(mkdir -p D:/JRL/JRLPlayGround/hugo/static/code)",
+      "Bash(mkdir -p D:/JRL/JRLPlayGround/hugo/static/assets)",
+      "Bash(bash scripts/sync.sh --force)",
+      "Bash(/c/Users/42536/AppData/Local/Microsoft/WinGet/Packages/Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe/hugo.exe --minify)",
+      "Bash(/c/Users/42536/AppData/Local/Microsoft/WinGet/Packages/Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe/hugo.exe --minify --buildDrafts)",
+      "Bash(/c/Users/42536/AppData/Local/Microsoft/WinGet/Packages/Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe/hugo.exe server *)",
+      "Bash(python3 scripts/translate.py --detect)",
+      "Bash(python3 scripts/translate.py --status)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"print\\('hello'\\)\")",
+      "Bash(python3 -c \"from pathlib import Path; print\\(list\\(Path\\('hugo/content.zh/posts'\\).rglob\\('*.md'\\)\\)\\)\")",
+      "Bash(uv --version)",
+      "Bash(uv run *)",
+      "Bash(hugo --minify --buildDrafts)"
+    ]
+  }
+}
