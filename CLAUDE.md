@@ -26,8 +26,9 @@ bash scripts/sync.sh --force
 | Command | What it does |
 |---------|-------------|
 | `/translate` or "translate" | Incremental translation: sync → detect changed posts → translate to EN |
-| `/publish` or "publish" | Full pipeline: run translate skill → build → commit → push |
+| `/publish` or "publish" | Full pipeline: translate → build → commit → push |
 | `publish --no-push` | Same but skip git push (local preview) |
+| `/pre-push-check` | Run before pushing: validates CI config, navigation, math, build |
 
 ### Shell scripts (fallback)
 
