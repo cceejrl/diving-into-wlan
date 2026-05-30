@@ -7,7 +7,7 @@ categories: [dive-into-wlan, phy-layer]
 slug: "non-ht-phy"
 type: docs
 BookToC: true
-draft: true
+draft: false
 ---
 
 # NON-HT 协议精读 (802.11a/g)

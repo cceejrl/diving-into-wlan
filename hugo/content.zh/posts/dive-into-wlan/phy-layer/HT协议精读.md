@@ -7,7 +7,7 @@ categories: [dive-into-wlan, phy-layer]
 slug: "ht-phy"
 type: docs
 BookToC: true
-draft: true
+draft: false
 ---
 
 # HT 协议精读 (802.11n)

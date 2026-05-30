@@ -7,6 +7,7 @@ categories: [dive-into-wlan, phy-layer]
 slug: "ht-phy"
 type: docs
 BookToC: true
+draft: false
 ---
 
 # HT Protocol Deep Dive (802.11n)

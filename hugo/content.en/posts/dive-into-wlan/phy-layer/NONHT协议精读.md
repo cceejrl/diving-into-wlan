@@ -7,6 +7,7 @@ categories: [dive-into-wlan, phy-layer]
 slug: "non-ht-phy"
 type: docs
 BookToC: true
+draft: false
 ---
 
 # NON-HT Protocol Deep Dive (802.11a/g)

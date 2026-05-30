@@ -7,7 +7,7 @@ categories: [dive-into-wlan, phy-layer]
 slug: "vht-phy"
 type: docs
 BookToC: true
-draft: true
+draft: false
 ---
 
 # VHT 协议精读 (802.11ac)
