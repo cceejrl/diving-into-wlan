@@ -74,6 +74,11 @@ For each file in the detection list, do the following:
    ```
    The body is the translated Markdown.
 6. **Write the translated file** to `hugo/content.en/posts/<rel>` — preserve the same relative path (including subdirectories)
+7. **Fix asset paths for EN depth**: EN pages live under `/en/posts/`, one level deeper than ZH pages. After writing the translated file, add one more `../` to asset paths:
+   ```bash
+   sed -i 's|\(\.\./\)\+assets/|../&|g' hugo/content.en/posts/<rel>
+   ```
+   Example: `../../../../assets/` (ZH) → `../../../../../assets/` (EN)
 
 ### Step 4: Mark translations as done
 

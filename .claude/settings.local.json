@@ -25,7 +25,17 @@
       "Bash(python3 -c \"from pathlib import Path; print\\(list\\(Path\\('hugo/content.zh/posts'\\).rglob\\('*.md'\\)\\)\\)\")",
       "Bash(uv --version)",
       "Bash(uv run *)",
-      "Bash(hugo --minify --buildDrafts)"
+      "Bash(hugo --minify --buildDrafts)",
+      "Bash(hugo server *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{size_download} bytes\" http://localhost:13139/diving-into-wlan/assets/images/2026-06-23_08-49-48.png)",
+      "Bash(kill %1)",
+      "Bash(curl -s http://localhost:13139/diving-into-wlan/posts/dive-into-wlan/phy-layer/802.11b-phy/)",
+      "Bash(hugo *)",
+      "Bash(bash *)",
+      "Bash(curl -s http://localhost:13140/diving-into-wlan/posts/dive-into-wlan/phy-layer/802.11b-phy/)",
+      "Bash(curl -s http://localhost:13140/diving-into-wlan/en/posts/dive-into-wlan/phy-layer/802.11b-phy/)",
+      "Bash(curl -s -o /dev/null -w \"ZH img: %{http_code} %{size_download}b\\\\n\" http://localhost:13140/diving-into-wlan/assets/images/2026-06-23_08-49-48.png)",
+      "Bash(curl -s -o /dev/null -w \"EN img: %{http_code} %{size_download}b\\\\n\" http://localhost:13140/diving-into-wlan/assets/images/2026-06-23_13-40-39.png)"
     ]
   }
 }

@@ -49,6 +49,14 @@ sync_dir() {
     fi
 }
 
+# Rewrite Obsidian-relative asset paths for Hugo ZH pages.
+# Obsidian vault root depth +1 = Hugo ZH page depth.
+# "../../../assets/images/foo.png" → "../../../../assets/images/foo.png"
+fix_asset_paths() {
+    local target="$1"
+    sed -i 's|\(\.\./\)\+assets/|../&|g' "$target"
+}
+
 filter_drafts() {
     local src="$1"
     local dst="$2"
@@ -69,6 +77,7 @@ filter_drafts() {
         fi
 
         cp "$f" "$target"
+        fix_asset_paths "$target"
         log "COPY: $rel"
         count=$((count + 1))
     done
@@ -81,6 +90,8 @@ log "Syncing posts (skipping drafts)..."
 if [ "$FORCE" = "--force" ]; then
     log "--force: syncing all posts"
     sync_dir "$SRC_POSTS" "$DST_POSTS"
+    log "Fixing asset paths in synced posts..."
+    find "$DST_POSTS" -name '*.md' -exec sed -i 's|\(\.\./\)\+assets/|../&|g' {} +
 else
     filter_drafts "$SRC_POSTS" "$DST_POSTS"
 fi

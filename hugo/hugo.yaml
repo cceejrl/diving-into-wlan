@@ -10,6 +10,8 @@ enableRobotsTXT: true
 # Enable KaTeX for math rendering
 markup:
   goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
     renderer:
       unsafe: true
     extensions:

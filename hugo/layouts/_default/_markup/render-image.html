@@ -1,0 +1,11 @@
+{{- $img := .Page.Resources.GetMatch (printf "**%s" .Destination) -}}
+<figure style="text-align: center;">
+    {{- if $img -}}
+        <img src="{{ $img.RelPermalink }}" alt="{{ .Text }}" title="{{ .Title }}" loading="lazy">
+    {{- else -}}
+        <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Title }}" loading="lazy">
+    {{- end -}}
+    {{- if .Text -}}
+        <figcaption style="color: #6a737d; font-size: 0.9em; margin-top: 0.5em;">{{ .Text }}</figcaption>
+    {{- end -}}
+</figure>

@@ -1,0 +1,9 @@
+{
+  "strictLineBreaks": true,
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "newFileLocation": "root",
+  "attachmentFolderPath": "assets/images",
+  "alwaysUpdateLinks": true
+}
