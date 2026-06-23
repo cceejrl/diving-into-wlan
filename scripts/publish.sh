@@ -86,7 +86,7 @@ else
     else
         echo "  Nothing to commit."
     fi
-    git push origin main 2>&1 || echo "  Push failed (check remote config)."
+    git push origin master 2>&1 || echo "  Push failed (check remote config)."
 fi
 echo ""
 echo "============================================"
